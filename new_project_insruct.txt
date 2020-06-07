@@ -1,0 +1,14 @@
+1. Setting up Environement Variables: Run following commands to create files
+    touch .gitignore
+    touch env.py
+2. Write lines to .gitignore:
+    env.py
+    __pycache__/
+3. import os
+
+    os.environ.setdefault("MONGO_URI", "mongodb+srv://root:{password}@cluster0-dllo5.mongodb.net/{dataBaseName}?retryWrites=true&w=majority")
+4.Connect your terminal to database with follwing command: you can also find command on momgodb webiste by clicking connect on overview page
+    mongo "mongodb+srv://cluster0-dllo5.mongodb.net/myTestDB" --username root
+5. Open up a different terminal and install following commands are given:
+    5.1. pip3 install dnspython
+    5.2. pip3 install pymongo
