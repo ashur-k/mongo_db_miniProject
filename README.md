@@ -1,39 +1,31 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Introduction:
+    This is mini project that I have created watching as my student learning module. I was suppose to
+    create a mongo data base and then from python command prompt, I was supposed to find, add, delete and create 
+    database entries.
 
-Welcome ashur-k,
+# Implementaiton:
+    Its a simple straight forward project with straight forward codes, easy to understand and follow along.
+    I have 7 main functions as following other than database connection functions. All funmctions run in a loop which only breaks when user asks to exit from the code.
+    ### main_loop():, get_record():, def show_menu():, def add_record():, def find_record():, def edit_record():, def delete_record():
+# Installed Packages:
+    dnspython==1.16.0
+    pymongo==3.10.1
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+# Things that I have learnt:
+    Now projects are complicated for me fir I have realsied setting and strting a project and running commands needs attention and accuracy.
+    For e.g. what is going to be in requirements file, setting up envioronment variavles, installing packages, knowing what are their names and commands.
+    I have entered all steps in new_project_implementation doc.
 
-## Gitpod Reminders
+# Problems I faced:
+    I haven't face any major problems during this project, and tutors were very helpful, they have warned me about problems already.
+    At start of project I was suppose to add a line to main folder to bashcrc file. Line was suppose to add username and password of database.
+    but later with tutors help I acheived same task by adding those files to env.py, which I also added to .gitignore so actual username password don't goes to
+    github repo. But for future refrences I have updated setup instructions in project implemntaion.txt. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+    Second at a point when I implemented find data from database function, I realised my queries were not able to find any data from database. It was becasue I was not using .lower and .captialize, in way how 
+    I was suppose to and that my code not to find entries from database becasue of case senstivity issues.
 
-`python3 -m http.server`
+    I also made simple mistake for k for key in loop which was capital so it ends up to show error which I think was corrected in a instance. 
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
